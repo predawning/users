@@ -49,17 +49,15 @@ This a demo about user login/register rest APIs
 		git config --global user.name "<your full name>"
 		git config --global user.email <your email>
 		git config --global core.editor vim
-		# choose whatever name you like
-		mkdir xingxiang
-		cd xingxiang
-		git clone ssh://git@47.94.3.138:10022/fund-station/users.git
+		
+		git clone https://github.com/predawning/users.git
 		
 		
 4. Configure the users system
 	
 	* Create local_settings.py( DON'T NEED if configuring DEVELOPMENT environment. )
 
-			cd xingxiang/users/project
+			cd users/project
 			cp local_settings.py.example local_settings.py
 			
 	* Update database configuration
@@ -86,7 +84,7 @@ This a demo about user login/register rest APIs
 	A virtual environment has its own site directories, optionally isolated from system site directories.
 	It also has its own Python binary and can have its own independent set of installed Python packages in its site directories.
 	
-        cd ~/xingxiang/users
+        cd users
         # activate the virtual environment
         pipenv shell
         # install necessary dependencies, especially Django
@@ -100,7 +98,7 @@ This a demo about user login/register rest APIs
 	* Activate the virtual environment
 	
 	```
-	    cd xingxiang/users
+	    cd users
 	    pipenv shell
 	```
 			
