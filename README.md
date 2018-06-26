@@ -105,7 +105,7 @@
     
     ```
         ./manage.py migrate
-        ./manage.py migrate --database products
+        ./manage.py migrate --database
     ```
 			
 	* Test the users system
@@ -173,8 +173,3 @@ The API interface is :
     
     http://localhost:8000/api/v1/
 
-# Multiple APPs/DBs
-
-There are more than two APPs, e.g. products, users and so on. So they will use different databases.
-By design, Unless we add extra database using for new APP, the products use products DB, 
-the others use the default one. In future, the separate DB is the base for Micro-Service Architecture.
