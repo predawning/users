@@ -1,3 +1,6 @@
+This a demo about user login/register rest APIs
+
+
 # How to set up the users system on OS X
 
 ## Preparation
